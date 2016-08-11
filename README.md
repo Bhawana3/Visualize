@@ -1,5 +1,3 @@
-# BhawanaVerma_SurvaiderTask
-
 A Flask Application for Hotel Reviews
 =====================================
 An application to visualize hotel review data's sentiments in pie chart format.
