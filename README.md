@@ -9,9 +9,9 @@ Installation
 
 You need to have python-3.5 and mongodb-3.2.4 installed on your machine.
 
-1.Install python  pip
-2.Install the required dependencies: 
-3.pip install -r requirements.txt
+1.Install python  pip <br />
+2.Install the required dependencies: <br />
+3.pip install -r requirements.txt <br />
 
 Import data into mongodb:
 
