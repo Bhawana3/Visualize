@@ -3,20 +3,19 @@
 <script src="{{ url_for('static',filename='node_modules/angular-chart.js/node_modules/chart.js/dist/Chart.js') }}"></script>
 <script src="{{ url_for('static',filename='node_modules/angular-chart.js/dist/angular-chart.min.js') }}"></script>
 <script src="{{ url_for('static',filename='scripts/hotel-charts.js') }}"></script>
-<div ng-app="myApp">
+
+<div ng-app="myApp" style="margin-bottom: 60px">
   <div ng-controller="FirstCtrl">
-
-
     <div ng-repeat="hotel in hotels" style="width: 100%;display: flex;">
       <div style="width:50%;">
         <h1 style="text-align: center;color: rgba(244, 67, 54, 0.78);font-family: sans-serif;">{[ hotel.name ]}</h1>
         <canvas height="160" id="pie" class="chart chart-pie" chart-data="hotel.chartData" chart-labels="labels" chart-options="options"></canvas>
       </div>
-      <div style="width: 50%;height: 500px; overflow: auto">
+      <div style="width: 50%;height: 500px; overflow: auto;word-wrap: break-word;margin-top: 44px;">
         <div>
-          <h3 ng-if="hotel.reviews" style="padding-left: 12px;color: #2A9D9E;font-family: sans-serif;font-size: 17px;padding-top:13px;">Top Customer Reviews</h3>
+          <h3 ng-if="hotel.reviews" style="padding-left: 5px;color: #2A9D9E;font-family: sans-serif;font-size: 17px;padding-top:13px;">Top Customer Reviews</h3>
         </div>
-        <div ng-repeat="review in hotel.reviews">
+        <div ng-repeat="review in hotel.reviews" style="background-color: rgba(191, 189, 189, 0.23);padding-left: 15px">
             <div style="text-align: left;padding: 12px;font-family: sans-serif;font-size: 14px;color: #201F1F">{[ review ]}</div>
         </div>
       </div>
