@@ -4,9 +4,9 @@
 <script src="{{ url_for('static',filename='node_modules/angular-chart.js/dist/angular-chart.min.js') }}"></script>
 <script src="{{ url_for('static',filename='scripts/hotel-charts.js') }}"></script>
 
-<div ng-app="myApp" style="margin-bottom: 60px">
+<div ng-app="myApp" style="width: 100%;height: auto">
   <div ng-controller="FirstCtrl">
-    <div ng-repeat="hotel in hotels" style="width: 100%;display: flex;">
+    <div ng-repeat="hotel in hotels" style="width: 100%;display: flex;background-color: whitesmoke">
       <div style="width:50%;">
         <h1 style="text-align: center;color: rgba(244, 67, 54, 0.78);font-family: sans-serif;">{[ hotel.name ]}</h1>
         <canvas height="160" id="pie" class="chart chart-pie" chart-data="hotel.chartData" chart-labels="labels" chart-options="options"></canvas>
