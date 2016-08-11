@@ -10,7 +10,8 @@
     <div ng-repeat="hotel in hotels" style="width: 100%;display: flex;border-bottom: solid 2px;border-color: #CDCAC7;">
       <div style="width:50%;">
         <h1 style="text-align: center;color: rgba(244, 67, 54, 0.78);font-family: sans-serif;text-shadow: 1px 1.5px 1px #9E9E9E;">{[ hotel.name ]}</h1>
-        <canvas height="160" id="pie" class="chart chart-pie" chart-data="hotel.chartData" chart-labels="labels" chart-options="options"></canvas>
+        <div style="color: #565666;text-align: center;font-family: sans-serif;font-size: 13px;">Showing positive,negative,neutral sentiments of all customers</div>
+        <canvas style="padding-top: 40px;" height="160" id="pie" class="chart chart-pie" chart-data="hotel.chartData" chart-labels="labels" chart-options="options"></canvas>
       </div>
       <div>
           <h3 ng-if="hotel.reviews" style="color: #2A9D9E;font-family: sans-serif;font-size: 17px;padding-top:22px;">Top Customer Reviews</h3>
