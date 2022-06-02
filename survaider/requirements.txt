@@ -10,7 +10,7 @@ chardet==2.2.1
 click==6.6
 colorama==0.2.5
 flask-mongoengine==0.8
-html5lib==0.999
+html5lib==0.99999999
 itsdangerous==0.24
 mongoengine==0.10.6
 pycurl==7.19.3
